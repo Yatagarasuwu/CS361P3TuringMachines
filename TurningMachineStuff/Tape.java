@@ -39,13 +39,13 @@ public class Tape {
      * The symbols are collected into a list as strings, and then joined
      * together into a single string representing the visited tape content.
      *
-     *  (temp) I can't lie, I had to look up a bit for the min/max sections. Its a bit weird for sure. 
+     * Min/max sections were developed using the sources mentioned in README.
      * 
      * @Return 
      * - A string containing the visited symbols in order.
      */ 
     String getVisitedTapeToString() {
-    int min = tape.keySet().stream().min(Integer::compare).orElse(0); //  
+    int min = tape.keySet().stream().min(Integer::compare).orElse(0); 
     int max = tape.keySet().stream().max(Integer::compare).orElse(0);
 
     List<String> content = new ArrayList<>();
