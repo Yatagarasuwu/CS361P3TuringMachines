@@ -33,7 +33,7 @@
      java TurningMachineStuff.TMSimulator BB3.txt
  
  ## Expected Output:
- The simulator will print the content of the visited tape after halting. For runs that are too long or non halting machines, the simulator uses a step limit (10,000 steps) to prevent infinite loops and prints a warning if that limit is reached.
+ The simulator will print the content of the visited tape after halting.  At one point, we had a failsafe: For runs that are too long or non halting machines, the simulator uses a step limit (10,000 steps) to prevent infinite loops and prints a warning if that limit is reached. However, since we talked about it in lecture, this failsafe was
  
  Notes:
  - The machine halts when it reaches the highest-numbered state.
