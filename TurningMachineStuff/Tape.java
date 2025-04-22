@@ -1,5 +1,13 @@
+
 package TurningMachineStuff;
 
+/**
+ * Tape section for P3 of CS361.
+ * Sets up the tape logic and structure for TMSimulator to later implement. Uses hashmaps.
+ * 
+ * @author 
+ * Parker Smith, Sabastian Leeper
+ */
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
