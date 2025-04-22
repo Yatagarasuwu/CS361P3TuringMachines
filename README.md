@@ -25,7 +25,7 @@ Honestly, the only concepts that aren't too clear are still related to my unders
 ## How to Compile:
 Open a terminal in the project directory  (TuringMachineStuff folder) and run:
 
-    javac TuringMachineStuff/*.java
+    javac *.java
 
 ## How to Run:
 Run the simulator with one of the provided input files:
