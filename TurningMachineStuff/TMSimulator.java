@@ -71,10 +71,10 @@ public class TMSimulator {
 
             // Start simulation
             int currentState = 0;
-            int maxSteps = 10000;  // Safety net to prevent infinite loops (adjust as needed)
+            // int maxSteps = 10000;  // Safety net for testing to prevent infinite loops (adjust as needed)
             int steps = 0;
 
-            while (currentState != (numStates - 1) && steps < maxSteps) {
+            while (currentState != (numStates - 1)) { // && steps < maxSteps)
                 int currentSymbol = tape.read();
                 Transition transition = transitionTable
                                             .getOrDefault(currentState, new HashMap<>())
@@ -91,10 +91,12 @@ public class TMSimulator {
 
                 steps++;
             }
-
+            // Safety net for testing
+            /* 
             if (steps >= maxSteps) {
                 System.err.println("Warning: Max steps exceeded. Possible infinite loop. Halting.");
             }
+            */
 
             // Output content from visited tape
             System.out.println(tape.getVisitedTapeToString());
