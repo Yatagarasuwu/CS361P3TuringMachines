@@ -23,14 +23,14 @@ Honestly, the only concepts that aren't too clear are still related to my unders
 
 
 ## How to Compile:
-Open a terminal in the project root directory (the one containing the TurningMachineStuff folder) and run:
+Open a terminal in the project directory  (TuringMachineStuff folder) and run:
 
-    javac TurningMachineStuff/*.java
+    javac TuringMachineStuff/*.java
 
 ## How to Run:
 Run the simulator with one of the provided input files:
 
-    java TurningMachineStuff.TMSimulator BB3.txt
+    java TuringMachineStuff.TMSimulator BB3.txt
 
 ## Expected Output:
 The simulator will print the content of the visited tape after halting. For runs that are too long or non halting machines, the simulator uses a step limit (10,000 steps) to prevent infinite loops and prints a warning if that limit is reached.
